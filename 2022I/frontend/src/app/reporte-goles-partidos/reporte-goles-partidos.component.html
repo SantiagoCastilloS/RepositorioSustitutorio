@@ -1,0 +1,35 @@
+<div>
+  <h1 style="align-content: center">REPORTE DE GOLES EN PARTIDOS</h1>
+</div>
+<table>
+  <tr>
+    <th>ID PARTIDO</th>
+    <th> | </th>
+    <th>EQUIPO LOCAL</th>
+    <th> | </th>
+    <th>EQUIPO VISITANTE</th>
+    <th> | </th>
+    <th>FECHA</th>
+    <th> | </th>
+    <th>HORA</th>
+    <th> | </th>
+    <th>AUTOR GOL</th>
+    <th> | </th>
+    <th>MINUTO</th>
+  </tr>
+  <tr *ngFor="let item of lista">
+    <td>{{item.idPartido}}</td>
+    <td> | </td>
+    <td>{{item.equipoLocal}}</td>
+    <td> | </td>
+    <td>{{item.equipoVisitante}}</td>
+    <td> | </td>
+    <td>{{item.fecha}}</td>
+    <td> | </td>
+    <td>{{item.hora}}</td>
+    <td> | </td>
+    <td>{{item.autorGol}}</td>
+    <td> | </td>
+    <td>{{item.minuto}}</td>
+  </tr>
+</table>

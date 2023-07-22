@@ -1,0 +1,23 @@
+<div>
+  <h1 style="align-content: center">REPORTE DE GOLEADORES</h1>
+</div>
+<table>
+  <tr>
+    <th>ID JUGADOR</th>
+    <th> | </th>
+    <th>NOMBRE</th>
+    <th> | </th>
+    <th>EQUIPO</th>
+    <th> | </th>
+    <th>GOLES</th>
+  </tr>
+  <tr *ngFor="let item of lista">
+    <td>{{item.idJugador}}</td>
+    <td> | </td>
+    <td>{{item.nombres}}</td>
+    <td> | </td>
+    <td>{{item.nombreEquipo}}</td>
+    <td> | </td>
+    <td>{{item.goles}}</td>
+  </tr>
+</table>

@@ -1,0 +1,79 @@
+<div>
+  <h1 style="align-content: center"  >BUSCAR LAVADORAS POR CAPACIDAD DE LAVADO</h1>
+  <div>
+    <p>MINIMO</p>
+    <input type="Text" placeholder="Ingrese minimo requerido" [(ngModel)]="min">
+  </div>
+  <div>
+    <p>MAXIMO</p>
+    <input type="Text" placeholder="Ingrese maximo requerido" [(ngModel)]="max">
+  </div>
+  <br>
+  <button (click)="buscar()">BUSCAR</button>
+</div>
+<br>
+<table>
+  <tr>
+    <th>IdRep</th>
+    <th> | </th>
+    <th>FechaIn</th>
+    <th> | </th>
+    <th>FechaCie</th>
+    <th> | </th>
+    <th>Costo</th>
+    <th> | </th>
+    <th>IdElec</th>
+    <th> | </th>
+    <th>Marca</th>
+    <th> | </th>
+    <th>Año</th>
+    <th> | </th>
+    <th>IdLav</th>
+    <th> | </th>
+    <th>CapLav</th>
+    <th> | </th>
+    <th>CapSec</th>
+    <th> | </th>
+    <th>VelCent</th>
+    <th> | </th>
+    <th>Codigo</th>
+    <th> | </th>
+    <th>NombreCl</th>
+    <th> | </th>
+    <th>NombreTe</th>
+    <th> | </th>
+    <th>CodEmp</th>
+  </tr>
+  <tr *ngFor="let data of lista">
+    <td>{{data.idReparacion}}</td>
+    <td>  |   </td>
+    <td>{{data.fechaInicio}}</td>
+    <td>  |   </td>
+    <td>{{data.fechaCierre}}</td>
+    <td>  | </td>
+    <td>{{data.costo}}</td>
+    <td>  |   </td>
+    <td>{{data.idElectrodomestico}}</td>
+    <td>  | </td>
+    <td>{{data.marca}}</td>
+    <td>  | </td>
+    <td>{{data.anio}}</td>
+    <td>  | </td>
+    <td>{{data.idLavadora}}</td>
+    <td>  | </td>
+    <td>{{data.capacidadLavado}}</td>
+    <td>  | </td>
+    <td>{{data.capacidadSecado}}</td>
+    <td>  | </td>
+    <td>{{data.velocidadCentrifugado}}</td>
+    <td>  | </td>
+    <td>{{data.codigo}}</td>
+    <td>  | </td>
+    <td>{{data.nombreCliente}}</td>
+    <td>  | </td>
+    <td>{{data.nombreTecnico}}</td>
+    <td>  | </td>
+    <td>{{data.codigoEmpleado}}</td>
+  </tr>
+</table>
+

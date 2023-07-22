@@ -1,0 +1,13 @@
+<section class="w-3/5 mx-auto bg-yellow-200 shadow-2xl rounded px-10 px-20">
+  <h1 class="text-7xl">ACTUALIZAR LA FREEZE DE UNA REFRIGERADORA</h1>
+  <label class="text-lg">Estado Freeze</label>
+  <div>
+    <input type="text"  name="estado" [(ngModel)]="refrigedor.tieneFreezer">
+  </div>
+
+  <label class="text-lg">Capacidad de la refrigeradora</label>
+  <div>
+    <input type="text"  name="dni" [(ngModel)]="refrigedor.capacidadLitros">
+  </div>
+  <button  (click)="actualizar()">Actualizar</button>
+</section>

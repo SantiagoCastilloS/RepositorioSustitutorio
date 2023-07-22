@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Intervalo {
-    private int max;
-    private int min;
+public class Refrigeradora {
+    private String tieneFreezer;
+    private int capacidadLitros;
 }
